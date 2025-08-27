@@ -1,0 +1,288 @@
+* {
+    font-family: 'Montserrat';
+}
+:root {
+    --ff-preto: #121212;
+    --ff-cinza: #E2E2E2;
+    --ff-vermelho: #DB050B;
+    --ff-vermelho-degrade: linear-gardient(to right, #DB050B, #FF2D33);
+    --ff-branco: #FFF;
+
+    --ff-titulo: 2.25rem;
+    --ff-subtitulo: 1.25rem;
+    --ff-corpo: 1rem;
+    --ff-categorias: 0.75rem;
+    --ff-background-color: #111111;
+}
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    background-color: var(--ff-background-color);
+}
+.banner {
+    background-image: url(./assets/desktop/BANNERDESKTOP.png);
+    height: 1000px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-size: cover;
+    background-position: center;
+    padding-left: 17.25rem;
+}
+.banner-image{
+    height: 200px;
+}
+.banner-title {
+    font-family: "Special Gothic Expanded One";
+    font-size: 3.25rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    background: linear-gradient(90deg, #DB050B 0%, #FF2D33 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: var(--ff-subtitulo);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 43rem;
+}
+.ff-button {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: var(--ff-corpo);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 27.5px;
+    padding: 1.0625rem 2.375rem;
+    border: 1px solid #A8FFBF;
+    background: linear-gradient(90deg, #24A847 0%, #26CD52 100%);
+    cursor: pointer;
+}
+.ff-button:hover{
+    background: linear-gradient(90deg, #30DE5E 0%, #33F867 100%);
+    box-shadow: 0 0 20px 0 rgba(168, 255, 191, 0.50);
+}
+@media(max-width: 1440px) {
+    .banner{
+        height: 800px;
+        padding-left: 11.25rem;
+    }
+    .banner-image{
+        height: 175px;
+    }
+    .banner-title {
+        font-size: 2.25rem;
+    }
+    .banner-text {
+        font-size: 1rem;
+        width: 27rem;
+    }
+}
+@media (max-width: 768px) {
+    .banner {
+        background-image: url(./assets/mobile/BANNERMOBILE.png);
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+        align-items: center;
+    }
+    .banner-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .banner-image{
+        height: 130px;
+        padding-top: 2rem;
+    }
+    .banner-title {
+        font-size: 1.75rem;
+    }
+    
+    .banner-text {
+        font-size: 0.9rem;
+        width: 19rem;
+        text-align: center;
+    }
+
+    .ff-button {
+        font-size: 0.75rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+.content{
+    padding: 11.25rem;
+}
+
+.sobre-nos{
+    gap: 5rem;
+    align-items: center;
+    color: var(--ff-branco);
+}
+
+.btn-sobre-nos{
+    color: #FF2D33;
+    border: 1px solid #FF2D33;
+    background: transparent;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+}
+.btn-sobre-nos:hover{
+    background-color: #FF2D33;
+    color: var(--ff-branco);
+}
+
+.text-sobre-nos{
+    text-align: justify;
+}
+
+.title-sobre-nos{
+    text-transform: uppercase;
+}
+
+.title-sobre-nos span{
+    color: var(--ff-vermelho);
+    display: block;
+}
+.container-sobre{
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-sobre-nos{
+    height: 670px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px var(--ff-vermelho);
+    -moz-box-shadow: 10px 10px 5px 0px var(--ff-vermelho);
+}
+
+.local-sobre-nos{
+    border: 0.5px solid #E61B2099;
+    position: absolute;
+    bottom: 20px;  
+    background: #0000004D;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    backdrop-filter: blur(10px)
+}
+
+.servicos{
+    border-radius: 40px;
+    background-color: #FFF;
+    padding: 0 3rem 3rem 3rem;
+    margin-top: 5rem;
+}
+
+.seta{
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+.servicos-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 3rem;
+}
+.text-servicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: jus;
+}
+
+
+
+.title-servicos{
+    text-transform: uppercase;
+    padding-bottom: 5rem;
+}
+
+.img-desmanche{
+   height: 420px;
+}
+
+.title-servicos span{
+    color: var(--ff-vermelho);
+} 
+.cards-servicos{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.card-servicos{
+    border: 2px solid #FF2D33;
+    border-radius: 8px;
+}
+
+.beneficios-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 3rem;
+}
+.title-beneficios{
+    text-transform: uppercase;
+    padding-bottom: 5rem;
+    color: var(--ff-branco);
+}
+
+.title-beneficios span{
+    color: var(--ff-vermelho);
+}
+
+.cards-beneficios{
+    justify-content: center;
+    gap: 5rem;
+}
+.card-beneficios{
+    color: var(--ff-branco);
+    text-align: start;
+}
+
+
+.fale-conosco div{
+    border-right: 1px solid rgba(217, 217, 217, 0.10);
+    padding-right: 9rem;
+    
+}
+.fale-conosco div .informacoes{
+    border-bottom: 1px solid rgba(217, 217, 217, 0.10);
+    border-top: 1px solid rgba(217, 217, 217, 0.10);
+}
+
+.footer{
+    background-color: var(--ff-vermelho);
+    color: #FFF;
+    padding: 1rem;
+}
