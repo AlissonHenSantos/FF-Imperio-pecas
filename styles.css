@@ -203,20 +203,28 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .servicos-content{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     gap: 10px;
     padding-top: 3rem;
+
 }
+
+.imgMotor{
+    height: 320px;
+}
+
 .text-servicos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    text-align: jus;
+    text-align: justify;
+
 }
 
 
@@ -227,7 +235,7 @@ body {
 }
 
 .img-desmanche{
-   height: 420px;
+   width: 600px;
 }
 
 .title-servicos span{
@@ -265,21 +273,156 @@ body {
     justify-content: center;
     gap: 5rem;
 }
-.card-beneficios{
+.card-beneficios {
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 20px;
+    padding: 2.5rem;
+    position: relative;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-beneficios img {
+    background: linear-gradient(180deg, #DB050B, #FF2D33);
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    width: 60px;  
+    height: 60px;
+    box-shadow: 0 0 25px rgba(219, 5, 11, 0.6);
+  }
+
+  .card-beneficios::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    margin-left: 1.9rem;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 6px;
+    border-radius: 0 0 6px 6px;
+    background: linear-gradient(90deg, #DB050B, #FF2D33);
+  }
+  .card-beneficios h5 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .card-beneficios p {
+    font-size: 1.3rem;
+    color: #ccc;
+    line-height: 1.5;
+  }
+
+.fale-conosco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--ff-branco);
-    text-align: start;
 }
 
-
-.fale-conosco div{
+.fale-conosco-text{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
     border-right: 1px solid rgba(217, 217, 217, 0.10);
+    margin-right: 9rem;
     padding-right: 9rem;
-    
 }
-.fale-conosco div .informacoes{
+
+.fale-conosco-text p{
+    text-align: justify;
+}
+.informacoes{
     border-bottom: 1px solid rgba(217, 217, 217, 0.10);
     border-top: 1px solid rgba(217, 217, 217, 0.10);
+    padding: 1.5rem 0 0 0;
 }
+
+.informacoes > div{
+    color: var(--ff-branco);
+    margin-bottom: 1rem;
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(230, 27, 32, 0.30);
+    background: #1E1E1E;
+}
+
+.info-item  i{
+    font-size: 2rem;
+    color: white;
+}
+
+.info-item{
+    margin-right: 1rem;
+    border-radius: 10px;
+    background: var(--degrade, linear-gradient(90deg, #DB050B 0%, #FF2D33 100%));
+    box-shadow: 0 0 20px 0 rgba(230, 27, 32, 0.60);
+    padding: 1rem;
+}
+.form-contact {
+    border: 1px solid #535353;
+    padding: 3.8rem;
+  }
+  
+  input, textarea {
+    border: 1px solid #535353;
+    background-color: transparent;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    padding: 1.5rem; 
+    color: #fff; 
+    font-size: 1.4rem;
+    outline: none;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #ccc;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  
+  textarea {
+    resize: none;
+    height: 10rem;
+  }
+  
+  .btn-form {
+    width: 100%;
+    padding: 1.5rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(90deg, #DB050B 0%, #FF2D33 100%);
+  }
+
+.img-mais-completa{
+    height: 800px;
+    
+}
+
+.mais-completa-img-fundo{
+        background: linear-gradient(180deg, #db050b, #ff2d33); /* degrade vermelho */
+        border-radius: 20px; /* cantos arredondados */
+        padding: 40px;
+        position: relative;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+  
 
 .footer{
     background-color: var(--ff-vermelho);
