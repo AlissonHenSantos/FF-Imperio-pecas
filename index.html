@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/ed928196c0.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -18,6 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
     <title>FF IMPÉRIO DAS PEÇAS</title>
 </head>
 
@@ -36,11 +36,28 @@
                 FALAR COM UM VENDEDOR
             </button>
         </div>
-    </div>
+    </div><div class="blur-vermelho"></div>
     <main class="content">
-        
-        <section class="apresentacao">
 
+        <section class="apresentacao">
+            <div class="apresentacao-content">
+                <h1 class="title-apresentacao">
+                    <span>A PEÇA CERTA PARA O SEU VEÍCULO,</span>
+                    COM A ECONOMIA QUE VOCÊ PROCURA.
+                </h1>
+
+
+
+                <div class="video-wrapper ">
+                    <img src="assets/desktop/BANNERDESKTOP.png" alt="Video sobre a Império das Peças"
+                        class="video-thumbnail">
+                    <div class="play-button"></div>
+                </div>
+
+                <button class="ff-button mt-5">
+                    FALAR COM UM VENDEDOR
+                </button>
+            </div>
         </section>
 
         <section class="sobre-nos container pb-5 d-flex">
@@ -77,18 +94,18 @@
             </div>
             <div class="servicos-content">
                 <span class="btn-sobre-nos">
-                    SOBRE NÓS
+                    SERVIÇOS
                 </span>
                 <h1 class="title-servicos">
                     Conheça nosso <span>serviços</span>
                 </h1>
 
-                <div class="venda-servicos container d-flex">
-                    <div class="col-6">
+                <div class="venda-servicos container d-flex row">
+                    <div class=" img-venda-servicos col-sm-10 col-md-5">
                         <img class="imgMotor" src="assets/desktop/Motor.png" alt="">
                     </div>
 
-                    <div class="text-servicos col-6">
+                    <div class="text-servicos  text-venda-servicos col-sm-10 col-md-5">
                         <h5>
                             Venda de Peças Usadas
                         </h5>
@@ -104,8 +121,8 @@
                     </div>
                 </div>
 
-                <div class="desmanche-servicos container d-flex">
-                    <div class="text-servicos col-6 p-5">
+                <div class="desmanche-servicos container d-flex  row">
+                    <div class="text-servicos col-sm-10 col-md-4 ">
                         <h5>
                             Desmanche Credenciado
                         </h5>
@@ -121,16 +138,16 @@
                             FALAR COM VENDEDOR
                         </button>
                     </div>
-                    <div class="col-5">
-                        <img class="img-desmanche" src="assets/desktop/carro-desmontado-no-fundo-branco.jpg" alt="">
+                    <div class="col-sm-10 col-md-4 img-desmanche">
+                        <img class="img-desmanche" src="assets/desktop/carro-desmontado-no-fundo-branco.png" alt="">
                     </div>
 
                 </div>
 
-                <div class="cards-servicos container">
-                    <img class="card-servicos col-3" src="assets/desktop/card1servicos.png" alt="">
-                    <img class="card-servicos col-3" src="assets/desktop/card2Servicos.png" alt="">
-                    <img class="card-servicos col-3" src="assets/desktop/card3servicos.png" alt="">
+                <div class="cards-servicos container row">
+                    <img class="card-servicos  col-sm-12 col-md-3" src="assets/desktop/card1servicos.png" alt="">
+                    <img class="card-servicos  col-sm-12 col-md-3" src="assets/desktop/card2Servicos.png" alt="">
+                    <img class="card-servicos  col-sm-12 col-md-3" src="assets/desktop/card3servicos.png" alt="">
                 </div>
             </div>
 
@@ -138,14 +155,14 @@
         <section class="beneficios pt-5 ">
             <div class="beneficios-content">
                 <span class="btn-sobre-nos">
-                    SOBRE NÓS
+                    BENEFICIOS
                 </span>
                 <h1 class="title-beneficios">
                     Por que escolher a <span>FF império das peças?</span>
                 </h1>
 
-                <div class="cards-beneficios container d-flex ">
-                    <div class="card-beneficios col-3">
+                <div class="cards-beneficios container d-flex row">
+                    <div class="card-beneficios  col-3">
                         <img src="assets/desktop/imgCardBeneficios1.png">
                         <h5>
                             Economia Inteligente:
@@ -155,7 +172,7 @@
                             nova.
                         </p>
                     </div>
-                    <div class="card-beneficios col-3">
+                    <div class="card-beneficios col-3 ">
                         <img src="assets/desktop/Mask group.png">
                         <h5>
                             Garantia e Nota Fiscal:
@@ -165,7 +182,7 @@
                             procedência do produto.
                         </p>
                     </div>
-                    <div class="card-beneficios col-3">
+                    <div class="card-beneficios  col-3">
                         <img src="assets/desktop/img3CardBeneficios.png">
                         <h5>
                             Amplo Estoque:
@@ -189,47 +206,51 @@
             </div>
 
         </section>
-
+        
         <section class="mais-completa my-5">
             <div class="mais-completa-content container d-flex">
-                <div class="d-flex">
+             
                     <div class="mais-completa-text col-5">
                         <span class="btn-sobre-nos">A MAIS COMPLETA</span>
 
-                        <h1 class="title-mais-completa">
+                        <h1 class="title-beneficios p-5">
                             Tudo o que o <span>seu carro precisa</span>, em um só lugar
                         </h1>
-                        <div>
-                            <ul class="lista-mais-completa">
-                                <li><strong>Lataria e Peças Externas:</strong> Portas, capôs, para-choques, faróis,
-                                    lanternas e retrovisores.</li>
-                                <li><strong>Interior e Acabamento:</strong> Bancos, painéis, volantes e forros de porta.
-                                </li>
-                                <li><strong>Ar Condicionado e Climatização:</strong> Compressores, condensadores e
-                                    radiadores.</li>
-                            </ul>
-                        </div>
-                        <div class="mais-completa-img-fundo">
-                            <img class="img-mais-completa" src="assets/desktop/carro-mais-completa.png" alt="">
-                        </div>
-                        <div>
-                            <ul class="lista-mais-completa">
-                                <li><strong>Motor e Componentes:</strong> Motores completos, cabeçotes, bielas, pistões
-                                    e muito mais.</li>
-                                <li><strong>Câmbio e Transmissão:</strong> Caixas de marcha manuais e automáticas,
-                                    diferenciais e eixos.</li>
-                                <li><strong>Sistema Elétrico e Injeção:</strong> Módulos, sensores, alternadores e
-                                    motores de arranque.</li>
-                            </ul>
+                        <div class="mais-completa-content">
+                            <div class="col-3">
+                                <ul class="lista-mais-completa ">
+                                    <li><strong>Lataria e Peças Externas:</strong> Portas, capôs, para-choques, faróis,
+                                        lanternas e retrovisores.</li>
+                                    <li><strong>Interior e Acabamento:</strong> Bancos, painéis, volantes e forros de
+                                        porta.
+                                    </li>
+                                    <li><strong>Ar Condicionado e Climatização:</strong> Compressores, condensadores e
+                                        radiadores.</li>
+                                </ul>
+                            </div>
+                            
+                                <img class="img-mais-completa col-6" src="assets/desktop/carro-mais-completa.png" alt="">
+
+                            <div class="col-3">
+                                <ul class="lista-mais-completa">
+                                    <li><strong>Motor e Componentes:</strong> Motores completos, cabeçotes, bielas,
+                                        pistões
+                                        e muito mais.</li>
+                                    <li><strong>Câmbio e Transmissão:</strong> Caixas de marcha manuais e automáticas,
+                                        diferenciais e eixos.</li>
+                                    <li><strong>Sistema Elétrico e Injeção:</strong> Módulos, sensores, alternadores e
+                                        motores de arranque.</li>
+                                </ul>
+                            </div>
                         </div>
                         <button class="ff-button mt-4">FALAR COM UM VENDEDOR</button>
                     </div>
-                </div>
+               
 
             </div>
         </section>
 
-        <section class="fale-conosco pt-5">
+        <section class="fale-conosco pt-5  row">
 
             <div class="col-5 fale-conosco-text">
                 <h1 class="title-beneficios">encontre sua peça <br><span>agora mesmo!</span></h1>
@@ -282,9 +303,10 @@
                     </div>
                 </form>
             </div>
+            <div class="blur-vermelho"></div>
         </section>
     </main>
-    <footer class="footer justify-content-center d-flex">
+    <footer class="footer justify-content-center d-flex mt-5">
         © Copyright 2025 - Todos os direitos reservados FF Império das Peças | Desenvolvido por: PIMBA DEV LIMITADA
     </footer>
 
