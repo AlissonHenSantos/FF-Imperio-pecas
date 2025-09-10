@@ -107,7 +107,7 @@ body {
 @media (max-width: 768px) {
     .banner {
         background-image: url(./assets/mobile/BANNERMOBILE.png);
-        height: 1000px;
+        
         width: 100%;
         display: flex;
         justify-content: start;
@@ -364,7 +364,12 @@ body {
         font-size: 0.8rem;
     }
 }
-main { outline: 2px solid red; }
+main {
+    outline: 2px solid red;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
 
 .local-sobre-nos {
     border: 0.5px solid #E61B2099;
@@ -774,6 +779,11 @@ textarea {
     align-items: center;
     justify-content: center;
 }
+.mais-completa-elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .lista-mais-completa li {
     color: #E2E2E2;
@@ -796,6 +806,7 @@ textarea {
     .mais-completa-text {
         display: flex;
         justify-content: start;
+        align-items: start;
         padding: 0 1.5rem;
     }
 
@@ -812,16 +823,25 @@ textarea {
         text-align: center;
         font-size: 0.7rem;
     }
+    .mais-completa-conte div{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
 
     .mais-completa-content ul {
         order: 1;
     }
-
-    .mais-completa .div-img-mais-completa {
+    .mais-completa-content .ff-button{
         order: 2;
     }
+
+    .mais-completa .div-img-mais-completa {
+        order: 3;
+    }
+
    .mais-completa-text  .title-beneficios{
-        font-size: 1.25rem;
+        font-size: 1.2rem;
 
     }
 
@@ -829,6 +849,9 @@ textarea {
         height: 225px;
     }
 
+    .mais-completa-text .title-beneficios{
+        padding: 1rem 0;
+    }
 }
 
 .blur-vermelho {
