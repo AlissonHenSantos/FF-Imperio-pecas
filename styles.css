@@ -107,7 +107,7 @@ body {
 @media (max-width: 768px) {
     .banner {
         background-image: url(./assets/mobile/BANNERMOBILE.png);
-        
+
         width: 100%;
         display: flex;
         justify-content: start;
@@ -145,7 +145,8 @@ body {
         padding: 0.75rem 1.5rem;
     }
 }
-.content{
+
+.content {
     padding: 1rem;
 }
 
@@ -279,11 +280,13 @@ body {
     filter: blur(15px);
     z-index: -1;
 }
+
 @media (max-width: 768px) {
-   .sobre-nos div{
-    padding: 1rem 1rem;
-   }
+    .sobre-nos div {
+        padding: 1rem 1rem;
+    }
 }
+
 .sobre-nos {
     gap: 3rem;
     align-items: center;
@@ -335,39 +338,50 @@ body {
     -moz-box-shadow: 10px 10px 5px 0px var(--ff-vermelho);
     display: block;
 }
+
 @media (max-width: 1366px) and (min-width: 768px) {
     .img-sobre-nos {
         width: 100%;
         height: 450px;
         object-fit: cover;
     }
+
     .title-sobre-nos {
         font-size: 2rem;
     }
+
+    .desmanche-servicos {
+        padding-bottom: 2rem;
+    }
 }
+
 @media (max-width: 768px) {
     .sobre-nos {
         padding-left: 0;
     }
+
     .title-sobre-nos {
         font-size: 1.5rem;
         text-align: start;
     }
+
     .img-sobre-nos {
         width: 100%;
         height: 500px;
         object-fit: cover;
     }
+
     .local-sobre-nos {
         padding: 0;
         width: 80%;
         font-size: 0.8rem;
     }
 }
+
 main {
     padding-left: 2rem;
     padding-right: 2rem;
-   
+
 }
 
 .local-sobre-nos {
@@ -428,12 +442,11 @@ main {
     justify-content: center;
     align-items: start;
     text-align: justify
-
 }
 
 .text-servicos h5 {
     color: var(--ff-vermelho);
-    
+
 }
 
 
@@ -444,7 +457,7 @@ main {
 }
 
 .img-desmanche {
-    width: 500px;
+    width: 100%;
 }
 
 .desmanche-servicos {
@@ -459,31 +472,35 @@ main {
         display: block;
         margin-bottom: 1rem;
     }
-    .text-servicos{
+
+    .text-servicos {
         color: #333;
-font-family: Montserrat;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
+
     .desmanche-servicos {
         justify-content: start;
         padding: 0
     }
+
 
     .venda-servicos {
         justify-content: start;
         padding: 0;
         margin-bottom: 2rem;
     }
-    .text-servicos h5{
+
+    .text-servicos h5 {
         color: #DB050B;
-font-family: Montserrat;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     .img-desmanche {
@@ -491,7 +508,8 @@ line-height: normal;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    .servicos{
+
+    .servicos {
         padding: 0 2rem 1rem;
     }
 }
@@ -602,7 +620,7 @@ line-height: normal;
     order: 2;
 }
 
-@media (max-width: 1280px) and (min-width: 768px) {
+@media (max-width: 1366px) and (min-width: 768px) {
     .card-beneficios p {
         font-size: 0.7rem;
     }
@@ -610,6 +628,8 @@ line-height: normal;
     .card-beneficios h5 {
         font-size: 0.9rem;
     }
+   
+
 }
 
 @media (max-width: 768px) {
@@ -618,7 +638,7 @@ line-height: normal;
     }
 
     .beneficios-content {
-    
+
         justify-content: center;
         align-items: center;
     }
@@ -694,24 +714,40 @@ line-height: normal;
     border: 1px solid #535353;
     padding: 3rem;
 }
-@media (max-width: 768px)
-{   
+
+@media (max-width: 768px) {
+
+    .informacoes>div {
+        width: 90%;
+    }
+
+    .fale-conosco-text {
+        border-right: none;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .info-item i {
+        font-size: 1rem;
+        color: white;
+    }
+    .form-contact{
+        padding: 1rem;
+        width: 90%;
+    }
+    .fale-conosco-text{
+        width: 90%;
+    }
+    .informacoes > div{
+        width: 100%;
+    }
     
-.informacoes>div{
-    width: 90%;
-}
-.fale-conosco-text{
-    border-right: none;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    margin-bottom: 2rem;    
-}
-.info-item i {
-    font-size: 1.25rem;
-    color: white;
-}
 }
 
+.informacoes > div{
+        width: 100%;
+    }
 input,
 textarea {
     border: 1px solid #535353;
@@ -752,7 +788,7 @@ textarea {
 
 .img-mais-completa {
     position: relative;
-    height: 450px;
+    width: 100%;
     border-radius: 804px;
     z-index: 1;
     background: none;
@@ -778,7 +814,7 @@ textarea {
     transform: translateX(-50%);
     width: 100vw;
     height: 100%;
-    background: url(assets/desktop/luzes-da-frente-carro-a-noite-na-estrada\ 2.png) center/cover no-repeat;
+    background: url(assets/desktop/luzes-da-frente-carro-a-noite-na-estrada2.png) center/cover no-repeat;
     filter: blur(16px);
 
     z-index: -1;
@@ -798,7 +834,8 @@ textarea {
     align-items: center;
     justify-content: center;
 }
-.mais-completa-elements{
+
+.mais-completa-elements {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -823,8 +860,7 @@ textarea {
 
 @media (max-width: 768px) {
     .mais-completa-text {
-        display: flex
-;
+        display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 0 1.5rem;
@@ -846,16 +882,18 @@ textarea {
         text-align: center;
         font-size: 0.7rem;
     }
-    .mais-completa-conteudo div{
+
+    .mais-completa-conteudo div {
         display: flex;
         justify-content: center;
-       align-content: center;
+        align-content: center;
     }
 
     .mais-completa-content ul {
         order: 1;
     }
-    .mais-completa-content .ff-button{
+
+    .mais-completa-content .ff-button {
         order: 2;
     }
 
@@ -863,16 +901,16 @@ textarea {
         order: 3;
     }
 
-   .mais-completa-text  .title-beneficios{
+    .mais-completa-text .title-beneficios {
         font-size: 1.2rem;
 
     }
 
-    .img-mais-completa{
-        height: 225px;
+    .img-mais-completa {
+        height: 100%;
     }
 
-    .mais-completa-text .title-beneficios{
+    .mais-completa-text .title-beneficios {
         padding: 1rem 0;
     }
 }
