@@ -79,6 +79,10 @@ body {
     cursor: pointer;
 }
 
+.ff-button a {  
+    text-decoration: none;
+    color: #FFF;
+}
 .ff-button:hover {
     background: linear-gradient(90deg, #30DE5E 0%, #33F867 100%);
     box-shadow: 0 0 20px 0 rgba(168, 255, 191, 0.50);
