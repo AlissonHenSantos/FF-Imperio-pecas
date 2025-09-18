@@ -633,6 +633,9 @@ main {
         font-size: 0.9rem;
     }
 
+    .informacoes > div span{
+        font-size: 0.8rem;
+    }
 
 }
 
@@ -705,6 +708,8 @@ main {
     font-size: 2rem;
     color: white;
 }
+
+
 
 .info-item {
     margin-right: 1rem;
