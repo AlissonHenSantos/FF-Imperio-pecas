@@ -391,6 +391,7 @@ main {
 }
 
 
+
 .local-sobre-nos {
     border: 0.5px solid #E61B2099;
     position: absolute;
@@ -684,7 +685,7 @@ main {
 }
 
 .fale-conosco-text p {
-    text-align: justify;
+    
 }
 
 .informacoes {
@@ -718,7 +719,7 @@ main {
 
 
 .info-item {
-   
+    margin-right: 1rem;
     border-radius: 10px;
     background: var(--degrade, linear-gradient(90deg, #DB050B 0%, #FF2D33 100%));
     box-shadow: 0 0 20px 0 rgba(230, 27, 32, 0.60);
