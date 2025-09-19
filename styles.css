@@ -390,9 +390,6 @@ main {
     box-sizing: border-box;
 }
 
-* {
-    outline: 1px dashed blue;
-}
 
 .local-sobre-nos {
     border: 0.5px solid #E61B2099;
